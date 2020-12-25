@@ -1,0 +1,23 @@
+{
+    "name": "TimedActions",
+    "version": "0.0.1",
+    "description": "Simple handler for working with repeaded actions",
+    "keywords": "timer, interval",
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/hrLexyc/timed_action.git"
+    },
+    "authors":
+    [
+      {
+        "name": "Alexey Nikolaev",
+        "email": "hr.lexyc@gmail.com",
+        "maintainer": true
+      }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/hrLexyc/timed_action",
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
+  }
