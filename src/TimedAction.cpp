@@ -26,16 +26,22 @@ bool TimedAction::isActive() {
   return this->initialized && this->active;
 }
 
+bool TimedAction::isServing() {
+  return this->serving;
+}
+
 void TimedAction::operate() {
-  if (!this->isActive()) {
+  if (!this->isActive() || this->isServing()) {
     return;
   }
 
   unsigned long currentTime = millis();
   if (currentTime - this->updatedAt >= this->interval) {
+    this->serving = true;
     this->calledAction();
     this->passedSteps++;
     this->updatedAt = currentTime;
+    this->serving = false;
   }
 }
 
