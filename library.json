@@ -1,6 +1,6 @@
 {
     "name": "TimedActions",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Simple handler for working with repeaded actions",
     "keywords": "timer, interval",
     "repository":

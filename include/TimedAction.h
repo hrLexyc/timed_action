@@ -14,12 +14,14 @@ class TimedAction {
     TimedAction(void (*calledAction)(void), unsigned long interval);
     void init(void (*calledAction)(void), unsigned long interval);
     bool isActive();
+    bool isServing();
     void operate();
     void stop();
     unsigned int steps();
   private:
     bool initialized = false;
     bool active = true;
+    bool serving = false;
     unsigned int passedSteps = 0;
     unsigned long updatedAt;
     void (*calledAction)(void);
