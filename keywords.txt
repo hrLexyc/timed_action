@@ -1,0 +1,16 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TimedActions	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+isActive	KEYWORD2
+isServing	KEYWORD2
+operate	KEYWORD2
+stop	KEYWORD2
